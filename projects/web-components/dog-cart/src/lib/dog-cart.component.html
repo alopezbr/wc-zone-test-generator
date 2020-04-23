@@ -1,0 +1,19 @@
+<div class="dog-cart-container">
+  <h3>Dog Cart</h3>
+
+  <div class="cart-content">
+    <div class="dog-img">
+      <div *ngIf="!dogImg" class="loader"></div>
+      <div *ngIf="!dogImg" class="loader-txt">Select a Dog</div>
+      <img *ngIf="dogImg" [src]="dogImg">
+    </div>
+    <div class="dog-form">
+      <div class="breed-list">
+        <p-dropdown placeholder="Select a Breed" [options]="breedList" (onChange)="getBreedImages($event.value)"></p-dropdown>
+      </div>
+      <div class="img-list">
+        <p-dropdown placeholder="Select an Image" [options]="imageList" (onChange)="setImg($event.value)"></p-dropdown>
+      </div>
+    </div>
+  </div>
+</div>

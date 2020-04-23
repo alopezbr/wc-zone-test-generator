@@ -1,0 +1,9 @@
+{
+    "name": "@aitor/webcomponents",
+    "description": "PoC de una librería angular para generar webcomponents agnósticos de framework",
+    "version": "0.0.26",
+    "dependencies": {
+        "primeng": "^8.1.1",
+        "primeicons": "^2.0.0"
+    }
+}

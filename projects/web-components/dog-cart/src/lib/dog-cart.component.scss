@@ -1,0 +1,45 @@
+@import "~primeicons/primeicons.css";
+@import "~primeng/resources/themes/nova-light/theme.css";
+@import "~primeng/resources/primeng.min.css";
+
+.dog-cart-container {
+  .cart-content {
+    display: flex;
+
+    .dog-img {
+      margin: 30px;
+      img {
+        width: 200px;
+        height: auto;
+      }
+
+      .loader-txt {
+        margin: 30px;
+      }
+
+      .loader {
+        border: 16px solid #f3f3f3;
+        border-top: 16px solid #3498db;
+        border-radius: 50%;
+        width: 120px;
+        height: 120px;
+        animation: spin 2s linear infinite;
+      }
+
+      @keyframes spin {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+      }
+    }
+
+    .dog-form {
+      float: right;
+      margin: 30px;
+
+      .breed-list, .img-list {
+        margin: 20px;
+      }
+    }
+  }
+}
+
